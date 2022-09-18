@@ -9,6 +9,9 @@ node{
     {
         sh 'sudo docker-compose build'
         sh 'sudo docker-compose up -d'
+        sh 'date'
+	sh 'cal'
+	sh 'time'
     }
   stage('PUSH image to Docker Hub')
     {
